@@ -296,7 +296,7 @@ body{
   border-radius: 50%;
 
   border: 2px solid var(--rose); /* borda inteira = centro correto */
-  background: #F7EFE6;
+  background: #fff;
 
   position: relative;
   margin-top:1.0rem;
@@ -592,5 +592,6 @@ body{
 .clear-cart {
   display: none;
 }
+
 
 
