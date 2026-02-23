@@ -548,3 +548,16 @@
   }
 
 }
+
+/* =====================================
+   RADIO — FUNDO BRANCO REAL (CARD)
+   IMPORTANTE: sobrescreve estilo custom
+===================================== */
+
+.cookie-card .weight-row input[type="radio"]{
+  background: #fff !important;
+}
+
+.cookie-card .weight-row input[type="radio"]::before{
+  background: #fff !important;
+}
