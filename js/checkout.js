@@ -617,7 +617,7 @@ finishBtn.onclick = ()=>{
 // MONTA MENSAGEM WHATSAPP — FINAL
 // ======================
 
-let msg = 'Pedido Smooth\n\n';
+let msg = '*Pedido Smooth*\n\n';
 
 msg += `Cliente: ${nameEl.value}\n`;
 msg += `WhatsApp: ${phoneEl.value}\n\n`;
@@ -755,6 +755,7 @@ if (clearBtn) {
     updateUI();
   });
 }
+
 
 
 
