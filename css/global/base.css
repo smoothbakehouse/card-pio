@@ -369,3 +369,60 @@ body.app-ready {
 }
 
 
+
+
+
+/* ======================
+   ALERTA SMOOTH
+====================== */
+
+.smooth-alert{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.35);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  pointer-events:none;
+  transition:.25s;
+  z-index:999999;
+}
+
+.smooth-alert.show{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.smooth-alert-box{
+  background:#fff;
+  padding:22px 26px;
+  border-radius:18px;
+  text-align:center;
+  max-width:320px;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.smooth-alert-box strong{
+  display:block;
+  margin-bottom:8px;
+  color:#4A2E2A;
+}
+
+/* BOTÃO ALERTA */
+
+.smooth-alert-btn{
+  margin-top:14px;
+  padding:7px 22px;
+  border:none;
+  border-radius:12px;
+  background:#EF9C9F;
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.smooth-alert-btn:hover{
+  transform:translateY(-1px);
+}
