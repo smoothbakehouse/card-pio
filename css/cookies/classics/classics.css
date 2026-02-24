@@ -548,8 +548,8 @@
   }
 
 .cookie-card .weight-row input[type="radio"]{
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
 }
 
 .cookie-card .weight-row input[type="radio"]::after{
@@ -564,7 +564,7 @@
 
 
 .cookie-card .weight-row{
-  margin-bottom: 1.8rem;                  /* afasta dos botões */
+  margin-bottom: 2rem;                  /* afasta dos botões */
 }
 
 }
