@@ -1,4 +1,23 @@
 // ======================
+// ALERTA SMOOTH COM OK
+// ======================
+function smoothAlert(message){
+
+  const alertEl = document.getElementById("smooth-alert");
+  const textEl  = document.getElementById("smooth-alert-text");
+  const okBtn   = document.getElementById("smooth-alert-ok");
+
+  textEl.textContent = message;
+
+  alertEl.classList.add("show");
+
+  okBtn.onclick = () => {
+    alertEl.classList.remove("show");
+  };
+
+}
+
+// ======================
 // CONSOLE VISUAL MOBILE (TEMPORÁRIO)
 // ======================
 function log(msg){
@@ -567,48 +586,48 @@ document.addEventListener("DOMContentLoaded", () => {
 finishBtn.onclick = ()=>{
 
   if(!hasItems()){
-    alert('Adicione pelo menos um cookie ao pedido.');
+    smoothAlert('Adicione pelo menos um cookie ao pedido.');
     return;
   }
 
   if(!nameEl.value.trim()){
-    alert('Informe seu nome.');
+    smoothAlert('Informe seu nome.');
     nameEl.focus();
     return;
   }
 
   if(!phoneEl.value.trim()){
-    alert('Informe seu WhatsApp.');
+    smoothAlert('Informe seu WhatsApp.');
     phoneEl.focus();
     return;
   }
 
   const receive = document.querySelector('input[name="receive"]:checked');
   if(!receive){
-    alert('Escolha entrega ou retirada.');
+    smoothAlert('Escolha entrega ou retirada.');
     return;
   }
 
   if(receive.value === 'entrega' && !addressEl.value.trim()){
-    alert('Informe o endereço para entrega.');
+    smoothAlert('Informe o endereço para entrega.');
     addressEl.focus();
     return;
   }
 
   const pay = document.querySelector('input[name="payment"]:checked');
   if(!pay){
-    alert('Escolha a forma de pagamento.');
+    smoothAlert('Escolha a forma de pagamento.');
     return;
   }
 
   if(pay.value === 'Dinheiro'){
     const ch = document.querySelector('input[name="change"]:checked');
     if(!ch){
-      alert('Informe se precisa de troco.');
+      smoothAlert('Informe se precisa de troco.');
       return;
     }
     if(ch.value === 'sim' && !changeValue.value.trim()){
-      alert('Informe o valor para o troco.');
+      smoothAlert('Informe o valor para o troco.');
       changeValue.focus();
       return;
     }
@@ -756,9 +775,6 @@ if (clearBtn) {
     updateUI();
   });
 }
-
-
-
 
 
 
