@@ -547,8 +547,27 @@
     margin-left: 0;
   }
 
+.cookie-card .weight-row input[type="radio"]{
+  width: 24px;
+  height: 24px;
 }
 
+.cookie-card .weight-row input[type="radio"]::after{
+  width: 12px;
+  height: 12px;
+}
+
+
+.cookie-card .weight-row{
+  margin-top: 1.5rem;  /* puxa pra cima pra perto da descrição */
+}
+
+
+.cookie-card .weight-row{
+  margin-bottom: 1.8rem;                  /* afasta dos botões */
+}
+
+}
 /* =====================================
    RADIO — FUNDO BRANCO REAL (CARD)
    IMPORTANTE: sobrescreve estilo custom
@@ -561,3 +580,4 @@
 .cookie-card .weight-row input[type="radio"]::before{
   background: #fff !important;
 }
+
