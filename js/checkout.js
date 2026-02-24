@@ -479,8 +479,8 @@ const FREE_SHIPPING_COUPONS = [
   'SOFIA',
   'DRY',
   'CAROL',
-  'GUI'
-  'DEYG'
+  'GUI',
+  'DEYG',
 ];
 
 
@@ -756,6 +756,7 @@ if (clearBtn) {
     updateUI();
   });
 }
+
 
 
 
