@@ -28,7 +28,7 @@ let miniCart, miniTotal, miniCount, mobileBtn;
 // ESTADO CENTRAL
 // ======================
 const cart = {};
-const DELIVERY_FEE = 10;
+const DELIVERY_FEE = 9.99;
 let delivery = 0;
 let freeShipping = false;      // cupom frete
 let productCouponActive = false; // preparado (futuro)
@@ -392,7 +392,7 @@ document.querySelectorAll('input[name="receive"]').forEach(r=>{
 
 // ======================
 // CUPOM FRETE — GESTO SECRETO
-// 5 cliques em "Entrega (+10,00)"
+// 5 cliques em "Entrega (+R$9,99)"
 // ======================
 
 let deliveryClicks = 0;
@@ -407,7 +407,7 @@ document.querySelectorAll('input[name="receive"]').forEach(r=>{
 
     deliveryClicks++;
 
-    if(deliveryClicks === 7){
+    if(deliveryClicks === 10){
       couponBlock.classList.remove('sc-hidden');
     }
   });
@@ -755,6 +755,7 @@ if (clearBtn) {
     updateUI();
   });
 }
+
 
 
 
