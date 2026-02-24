@@ -407,7 +407,7 @@ document.querySelectorAll('input[name="receive"]').forEach(r=>{
 
     deliveryClicks++;
 
-    if(deliveryClicks === 10){
+    if(deliveryClicks === 9){
       couponBlock.classList.remove('sc-hidden');
     }
   });
@@ -480,6 +480,7 @@ const FREE_SHIPPING_COUPONS = [
   'DRY',
   'CAROL',
   'GUI'
+  'DEYG'
 ];
 
 
@@ -755,6 +756,7 @@ if (clearBtn) {
     updateUI();
   });
 }
+
 
 
 
